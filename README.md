@@ -11,7 +11,7 @@ MICON-Bench is a multi-image benchmark for evaluating image generation quality w
 
 - Python 3.9+
 - Install dependencies:
-  - `pip install openai pyyaml pillow`
+  - `pip install -r requirements.txt`
 
 ## Data (Hugging Face)
 
@@ -29,11 +29,13 @@ MICON-Bench/
       story_infer/
 ```
 
-Replace the placeholder below with your Hugging Face dataset URL:
+Hugging Face dataset:
 
 ```
-https://huggingface.co/<your-dataset-repo>
+https://huggingface.co/Hangliuuu/MICON-Bench
 ```
+
+Download the dataset from the link above and extract it into `Evaluation/data/`.
 
 ## Configure Paths
 
