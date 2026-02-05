@@ -13,7 +13,8 @@ judges:
 
   - name: "local-qwen-judge"
     provider: "http"
-    model: "/path/to/Qwen3-VL-32B-Instruct"  
+    # Default judge: Qwen3-VL-32B-Instruct
+    model: "/path/to/Qwen3-VL-32B-Instruct"
     endpoint: "http://localhost:8000/v1"  
     api_key_env: ""            
     temperature: 0.1
@@ -22,7 +23,8 @@ judges:
 
   - name: "local-internvl-judge"
     provider: "http"
-    model: "/path/to/InternVL3_5-38B"  
+    # Example alternative MLLM (change to your model/path)
+    model: "/path/to/InternVL3_5-38B"
     endpoint: "http://localhost:8000/v1"  
     api_key_env: ""            
     temperature: 0.1

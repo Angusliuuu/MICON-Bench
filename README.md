@@ -18,7 +18,7 @@ MICON-Bench is a multi-image benchmark for evaluating image generation quality w
 The dataset is **not** included in this repository. Download it from Hugging Face and place it under:
 
 ```
-MICON-Bench-Release/
+MICON-Bench/
   Evaluation/
     data/
       object_composition/
