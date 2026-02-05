@@ -1,0 +1,24 @@
+A. Instruction Following
+- A_check_1 (H1): Is the style of the subject in the final image consistent with that of the second reference image?
+- A_check_2: Is the subject positioned and arranged according to the prompt?
+- A_check_3: Does the subject appear from Image A (RA) as instructed?
+
+B. Identity / Fidelity
+- B_check_1 (H2): Is the subject’s identity faithfully preserved from RA?
+- B_check_2: Are the subject’s distinctive attributes (shape, features) intact?
+- B_check_3: Does the subject remain recognizable without distortion?
+
+C. Structure / Geometry
+- C_check_1 (H3): Is the background from RC correctly preserved?
+- C_check_2: Is the integration of subject and background structurally natural?
+- C_check_3: Do proportions and perspective remain realistic?
+
+D. Cross-Reference Consistency
+- D_check_1 (H4): Is only the style (texture/color) transferred from RB, without bringing RB’s objects or layout?
+- D_check_2: Are subject, style, and background disentangled without contamination?
+- D_check_3: Is the combination coherent and consistent across references?
+
+G. Overall Usability
+- G_check_1: Does the final image look harmonious and coherent?
+- G_check_2: Are lighting and colors consistent across subject, style, and background?
+- G_check_3: Is the composition aesthetically acceptable and practically usable?

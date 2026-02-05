@@ -1,0 +1,17 @@
+**Dimension A - Instruction Following:**
+Check: All explicit text requirements fulfilled with correct objects, actions, and relationships
+
+**Dimension B - Identity/Fidelity:**
+Check: Subjects faithful to text descriptions and reference identities
+
+**Dimension C - Structure/Geometry:**
+Check: Spatial layout matches text description with correct positional relationships
+
+**Dimension D - Cross-Reference Consistency:**
+Check: Text and visual references integrated without contradictions
+
+**Dimension F - Text Grounding:**
+Check: All key text details covered, no omissions or hallucinations, accurate text content
+
+**Dimension G - Overall Usability:**
+Check: Coherent composition aligned with text intent and sufficient visual quality

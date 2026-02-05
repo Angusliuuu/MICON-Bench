@@ -1,0 +1,24 @@
+A. Instruction Following
+- A_check_1 (H1): Are the specified local elements positioned as instructed?
+- A_check_2: Are all required target subjects present in the generated image?
+- A_check_3: Are there no missing or extra transferred elements?
+
+B. Identity / Fidelity
+- B_check_1: Do the transferred elements preserve their attributes (color, texture, style) from the reference?
+- B_check_2 (H2): Do the target subjects maintain their original identity while displaying transferred elements?
+- B_check_3: Are the subjects still recognizable without distortion?
+
+C. Structure / Geometry
+- C_check_1 (H3): Are the transferred elements integrated naturally with correct scale and alignment?
+- C_check_2: Are the boundaries between subjects and elements smooth (no cutout artifacts)?
+- C_check_3: Do lighting, shading, and depth make the transfer physically plausible?
+
+D. Cross-Reference Consistency
+- D_check_1: Are only the specified elements transferred (no unintended parts from references)?
+- D_check_2: Are elements from different references combined without contradictions?
+- D_check_3: Is the integration coherent and logically consistent?
+
+G. Overall Usability
+- G_check_1: Does the final image look natural and cohesive after element transfer?
+- G_check_2: Are lighting, shadows, and overall aesthetics consistent?
+- G_check_3: Is the composition practically usable and visually acceptable?

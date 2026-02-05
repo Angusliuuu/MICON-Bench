@@ -1,0 +1,27 @@
+[Verification Checkpoints]
+
+A. Instruction Following
+- A_check_1 (H1): Does the image include all specified objects/subjects?
+- A_check_2: Are the objects arranged generally as described in the prompt?
+- A_check_3: Are there no extra or missing elements?
+
+B. Identity / Fidelity
+- B_check_1: Does each object retain its identity from the reference images?
+- B_check_2: Are key visual attributes (color, texture, shape) preserved after repositioning?
+- B_check_3: Are the objects still recognizable and accurate in the new layout?
+
+C. Structure / Geometry
+- C_check_1 (H2): Are the objects positioned according to the prompt’s spatial requirements?
+- C_check_2: Are contact points realistic (no floating or unnatural overlaps)?
+- C_check_3: Is the overall configuration physically plausible?
+- C_check_4: Do perspective and depth correctly support the spatial arrangement?
+
+D. Cross-Reference Consistency
+- D_check_1: Are spatial constraints from multiple references applied consistently?
+- D_check_2: Are there no contradictions across reference-based spatial requirements?
+- D_check_3: Are integrated spatial relationships coherent and logical?
+
+G. Overall Usability
+- G_check_1: Does the scene appear natural and visually coherent?
+- G_check_2: Do lighting and shadows align with the spatial arrangement?
+- G_check_3: Is the composition balanced and aesthetically acceptable?

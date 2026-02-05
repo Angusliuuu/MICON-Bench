@@ -1,0 +1,47 @@
+# ===== Task Card (case skeleton) =====
+# Replace placeholders in braces with real values; remove unused fields.
+
+task_type: "{TASK_TYPE}"            # e.g., object_composition | spatial_constraints | part_transfer
+case_id: "{CASE_ID}"                # e.g., case_0001
+
+# Reference images (flat naming per task is recommended)
+refs:
+  RA: "data/{TASK_TYPE}/refs/{CASE_ID}_RA.png"
+  # Add more reference images if needed:
+  # RB: "data/{TASK_TYPE}/refs/{CASE_ID}_RB.png"
+  # RC: "data/{TASK_TYPE}/refs/{CASE_ID}_RC.png"
+
+# Original natural language prompt used for generation (keep full text for reproducibility)
+generation_prompt: |
+  {PUT_THE_ORIGINAL_GENERATION_PROMPT_HERE}
+
+# Structured task requirements (the judge uses these as checkpoints)
+goal: "{ONE_SENTENCE_GOAL}"
+constraints_hard:
+  - "{HARD_CONSTRAINT_1}"
+  - "{HARD_CONSTRAINT_2}"
+  # Note: if a hard constraint is violated, related dimensions are capped.
+constraints_soft:
+  - "{SOFT_CONSTRAINT_1}"
+  - "{SOFT_CONSTRAINT_2}"
+
+expectation_list:
+  - "{EXPECTATION_CHECK_1}"
+  - "{EXPECTATION_CHECK_2}"
+
+# # Observable anchors for judging (optional; improves stability)
+# anchors:
+#   - "{VISIBLE_ANCHOR_1}"
+#   - "{VISIBLE_ANCHOR_2}"
+
+# Participating dimensions (A–G); overall = (∑ s_d / n) * 100
+participating_dimensions: ["A","B","C","D","E","F","G"]   # keep only relevant dimensions
+
+# # Expected generation output spec (optional)
+# generator_output:
+#   size: "{WIDTH}x{HEIGHT}"          # e.g., "1024x1024"
+#   framing: "{FRAMING}"              # e.g., "centered"
+
+# # (Optional) extra metadata
+# notes: |
+#   {ANY_NOTES}

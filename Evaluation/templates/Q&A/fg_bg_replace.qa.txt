@@ -1,0 +1,24 @@
+A. Instruction Following
+- A_check_1: Is the specified foreground subject correctly extracted and placed?
+- A_check_2: Is the background fully replaced according to the instruction?
+- A_check_3: Are there no missing or extra elements introduced?
+
+B. Identity / Fidelity
+- B_check_1 (H1): Is the foreground subject’s identity preserved and still recognizable?
+- B_check_2: Are subject details (clothing, features, attributes) intact without distortion?
+- B_check_3: Are key attributes (color, texture, shape) unaffected by replacement?
+
+C. Structure / Geometry
+- C_check_1: Are the scale and proportions between foreground and background appropriate?
+- C_check_2: Are lighting and shadows consistent with the new environment?
+- C_check_3: Is the perspective and depth coherent between subject and background?
+
+D. Cross-Reference Consistency
+- D_check_1 (H2): Does the background remain unchanged and match its reference (Image B)?
+- D_check_2: Is the integration between foreground and background seamless (no visible cutouts)?
+- D_check_3: Are there no contradictions (e.g., mismatched time of day, weather, environment cues)?
+
+G. Overall Usability
+- G_check_1: Does the final composition look realistic and cohesive?
+- G_check_2: Are colors harmonized and boundaries clean?
+- G_check_3: Is the image aesthetically acceptable and practically usable?

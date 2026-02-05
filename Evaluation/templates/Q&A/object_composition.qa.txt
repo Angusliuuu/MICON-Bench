@@ -1,0 +1,26 @@
+[Verification Checkpoints]
+
+A. Instruction Following
+- A_check_1 (H1): Does the image include all specified objects?
+- A_check_2: Are the objects arranged as instructed?
+- A_check_3: Are there no extra or missing elements?
+
+B. Identity / Fidelity
+- B_check_1 (H2): Does each object's identity strictly match its reference?
+- B_check_2: Are key attributes (color, texture, shape) preserved?
+- B_check_3: Are the object details accurate and recognizable?
+
+C. Structure / Geometry
+- C_check_1: Are the spatial relationships between objects natural?
+- C_check_2: Are the proportions and sizes realistic?
+- C_check_3: Is the perspective and depth correct?
+
+D. Cross-Reference Consistency
+- D_check_1: Are objects from different references integrated without conflict?
+- D_check_2: Are style and lighting consistent across objects?
+- D_check_3: Are there no contradictions or jarring transitions?
+- D_check_4: Does the background match the instruction/reference?
+
+G. Overall Usability
+- G_check_1: Does the scene appear natural and cohesive?
+- G_check_2: Are the lighting, shadows, and overall aesthetics consistent?

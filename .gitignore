@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Large or generated artifacts (do not commit)
+Evaluation/data/
+Evaluation/outputs/
+Evaluation/prompts/judge/*/
+Evaluation/prompts/generator/
+

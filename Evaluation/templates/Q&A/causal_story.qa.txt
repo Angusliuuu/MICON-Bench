@@ -1,0 +1,29 @@
+A. Instruction Following
+- A_check_1 (H1): Does the generated image clearly depict the next step (not repetition of previous step)?
+- A_check_2: Are all essential story elements from the prompt/reference present in the continuation?
+- A_check_3: Does the scene follow the narrative perspective (e.g., same characters/environment)?
+
+B. Identity / Fidelity
+- B_check_1 (H2): Are the main characters consistent with the reference frames ?
+- B_check_2: Are key objects consistent across frames (e.g., same candle, same ball)?
+- B_check_3: Are no new irrelevant characters/objects introduced?
+
+C. Structure / Geometry
+- C_check_1: Is the spatial setup consistent with prior frames (same room/street/field)?
+- C_check_2: Are body poses/object positions logically evolved from last frame (not random jumps)?
+- C_check_3: Is physical plausibility respected (no floating, distorted scale, or impossible transitions)?
+
+D. Cross-Reference Consistency
+- D_check_1: Does the continuation align with all previous frames (not just the last one)?
+- D_check_2: Is the visual style consistent?
+- D_check_3: Are no contradictions introduced (e.g., object broken in one frame but intact later)?
+
+E. Causality / Temporal Logic
+- E_check_1 (H3): Is the next event a plausible causal outcome of previous events?
+- E_check_2: Does the temporal flow feel natural (no skipped or reversed steps)?
+- E_check_3: Is the implied physics/social logic realistic (e.g., water extinguishes fire, ball keeps rolling)?
+
+G. Overall Usability
+- G_check_1: Does the sequence form a coherent mini-story when viewed in order?
+- G_check_2: Is the emotional tone / communicative intent preserved (e.g., humor, tension)?
+- G_check_3: Would the output be usable in a narrative dataset (no confusion for reader/viewer)?

@@ -1,0 +1,36 @@
+# ===== Judge MLLM configurations =====
+defaults:
+  temperature: 0.1        
+  top_p: 1.0
+  max_tokens: 800         
+  timeout_s: 60
+  retries: 2
+  concurrency: 1          
+  json_strict_mode: true   
+  system_prefix: ""        
+
+judges:
+
+  - name: "local-qwen-judge"
+    provider: "http"
+    model: "/path/to/Qwen3-VL-32B-Instruct"  
+    endpoint: "http://localhost:8000/v1"  
+    api_key_env: ""            
+    temperature: 0.1
+    max_tokens: 800
+    description: "Qwen3-VL-32B local judge"
+
+  - name: "local-internvl-judge"
+    provider: "http"
+    model: "/path/to/InternVL3_5-38B"  
+    endpoint: "http://localhost:8000/v1"  
+    api_key_env: ""            
+    temperature: 0.1
+    max_tokens: 800
+    description: "InternVL3.5-38B local judge"
+
+routing:
+  default_judge: "local-qwen-judge"  
+  per_task:
+    story_infer: "local-qwen-judge"
+

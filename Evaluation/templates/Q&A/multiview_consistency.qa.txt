@@ -1,0 +1,24 @@
+A. Instruction Following
+- A_check_1: Is the required viewpoint correctly rendered (e.g., left, right, back)?
+- A_check_2: Are all specified objects visible from this viewpoint?
+- A_check_3: No missing or extraneous elements?
+
+B. Identity / Fidelity
+- B_check_1 (H1): Does the subject maintain its core identity across viewpoints?
+- B_check_2: Are distinctive features (color, texture, shape) consistent across views?
+- B_check_3: Is the subject recognizable as the same instance across angles?
+
+C. Structure / Geometry
+- C_check_1 (H2): Is the 3D structure coherent (no warped or collapsed parts)?
+- C_check_2: Are proportions correct in all views?
+- C_check_3: Do occlusions match natural geometry (no phantom parts visible)?
+
+D. Cross-View Consistency
+- D_check_1: Are details consistently positioned across viewpoints (e.g., stripes, patterns)?
+- D_check_2(H3): Are the Materials and markings should remain stable?
+- D_check_3: No contradictions (e.g., missing tail in one view, present in another)?
+
+G. Overall Usability
+- G_check_1: Do the generated images form a coherent multi-view set?
+- G_check_2: Are all views equally detailed and realistic?
+- G_check_3: Would this be usable as a consistent 3D reference?

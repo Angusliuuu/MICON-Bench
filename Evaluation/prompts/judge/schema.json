@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Multi-Image Benchmark Judge Output",
+    "description": "Standard output format for multimodal judge evaluations",
+    "type": "object",
+    "required": [
+        "scores",
+        "overall",
+        "rationale_short"
+    ],
+    "properties": {
+        "scores": {
+            "type": "object",
+            "description": "Individual dimension scores (0-1 for each participating dimension)",
+            "properties": {
+                "A": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Instruction Following - Task compliance score"
+                },
+                "B": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Identity/Fidelity - Subject/attribute preservation score"
+                },
+                "C": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Structure/Geometry - Spatial/geometric reasonableness score"
+                },
+                "D": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Cross-Ref Consistency - Multi-reference consistency score"
+                },
+                "E": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Causality/Temporal - Causal/temporal logic score"
+                },
+                "F": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Text Grounding - Text alignment score"
+                },
+                "G": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Overall Usability - Aesthetic and usability score"
+                }
+            },
+            "additionalProperties": false
+        },
+        "overall": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Overall average score (0-100), calculated as (Σ s_d / n) * 100, where s_d are 0-1 scores and n is the number of dimensions"
+        },
+        "rationale_short": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "Brief rationale for the scores (<=200 chars)"
+        },
+        "checks_passed": {
+            "type": "array",
+            "description": "List of expectation checks that passed",
+            "items": {
+                "type": "string"
+            }
+        },
+        "flags": {
+            "type": "array",
+            "description": "List of issues or violations detected",
+            "items": {
+                "type": "string"
+            }
+        },
+        "hard_constraint_violations": {
+            "type": "array",
+            "description": "Hard constraints that were violated (leads to score capping)",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}

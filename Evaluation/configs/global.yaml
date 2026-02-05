@@ -1,0 +1,24 @@
+# ===== Global settings for MICON-Bench =====
+project:
+  seed: 42
+  timezone: ""
+  paths:
+    # Paths can be relative or absolute; update them for your environment
+    data_root: "data"
+    templates_root: "templates"
+    prompts_root: "prompts"
+    outputs_root: "outputs"
+    generations_root: "outputs/generations"
+    eval_results_root: "outputs/eval_res"
+    reports_root: "outputs/reports"
+    schema_file: "prompts/judge/schema.json"
+
+scoring:
+  dimensions:
+    A: "Instruction Following"
+    B: "Identity/Fidelity"
+    C: "Structure/Geometry"
+    D: "Cross-Ref Consistency"
+    E: "Causality/Temporal"
+    F: "Text Grounding"
+    G: "Overall Usability"
