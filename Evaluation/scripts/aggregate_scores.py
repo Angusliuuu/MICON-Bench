@@ -873,8 +873,6 @@ def main():
     parser.add_argument("--project-root", type=str, default=".", help="Project root")
     parser.add_argument("--model-name", type=str, required=True, help="Model name")
     parser.add_argument("--task-type", type=str, default=None, help="Specific task type (optional)")
-    parser.add_argument("--no-candidate-eval", action="store_true",
-                       help="Disable candidate answer evaluation for story_infer")
     parser.add_argument("--judge-config", type=str, default=None,
                        help="Path to judge_models.yaml (default: configs/judge_models.yaml)")
     parser.add_argument("--global-config", type=str, default="configs/global.yaml",
@@ -910,7 +908,7 @@ def main():
     
     aggregator = ScoreAggregator(
         project_root=args.project_root,
-        use_candidate_eval=not args.no_candidate_eval,
+        use_candidate_eval=True,
         mllm_client=None,  # auto-initialize from config
         judge_config_path=args.judge_config,
         timestamp_dir=timestamp_dir,

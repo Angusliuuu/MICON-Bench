@@ -1,4 +1,4 @@
-# MICON-Bench
+# MICON-Bench: Benchmarking and Enhancing Multi-Image Context Image Generation in Unified Multimodal Models
 
 [![HF Dataset](https://img.shields.io/badge/🤗%20HF%20Dataset-MICON--Bench-yellow)](https://huggingface.co/datasets/Hangliuuu/MICON-Bench)
 
@@ -149,17 +149,11 @@ Outputs are saved to:
 Evaluation/outputs/eval_res/<MODEL_NAME>/<MODEL_NAME>_<TIMESTAMP>/
 ```
 
-## Optional: Candidate Evaluation (story_infer)
+## Candidate Evaluation (story_infer, required)
 
-If you use candidate-based scoring for `story_infer`, place the template at:
+`story_infer` uses candidate-based scoring by default. Place the template at:
 
 ```
 Evaluation/data/story_infer/simple_candidate_template.json
-```
-
-To disable candidate evaluation when aggregating scores:
-
-```
-python scripts/aggregate_scores.py --model-name <MODEL_NAME> --no-candidate-eval
 ```
 
