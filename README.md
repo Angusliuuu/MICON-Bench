@@ -2,6 +2,28 @@
 
 MICON-Bench is a multi-image benchmark for evaluating image generation quality with a unified, checkpoint-based judge pipeline.
 
+![MICON-Bench Overview](image.png)
+
+## 🔥 News
+
+- 2026-02: Initial open-source release of MICON-Bench and DAR framework.
+
+## Introduction
+
+MICON-Bench is a comprehensive benchmark and framework designed to evaluate and enhance Multi-Image Context Image Generation in Unified Multimodal Models (UMMs).
+While recent advancements in multimodal models have significantly improved visual understanding, existing evaluations primarily focus on single-image tasks. MICON-Bench addresses this gap by shifting the focus toward generating contextually coherent visual outputs that integrate and reason across multiple related reference images.
+
+### Key Contributions
+
+- **MICON-Bench Suite**: A rigorous benchmark consisting of 1,043 cases and 2,518 images across six diverse tasks: Object Composition, Spatial Composition, Attribute Disentanglement, Component Transfer, FG/BG Composition, and Story Generation.
+- **Evaluation-by-Checkpoint**: A novel, MLLM-driven framework that provides automated, scalable, and objective verification of semantic and visual consistency in generated images.
+- **Dynamic Attention Rebalancing (DAR)**: A training-free, plug-and-play mechanism that adaptively adjusts attention during inference. DAR reinforces relevant reference regions while suppressing distractions, significantly reducing hallucinations and improving cross-image coherence.
+
+### Framework Overview
+
+The core of our method, DAR, identifies over- and under-attended regions in reference images using attention maps. By rebalancing these activations without any additional fine-tuning, DAR enables state-of-the-art models (such as OmniGen2 and BAGEL) to better preserve identity and spatial relations.
+Note: Extensive experiments demonstrate that MICON-Bench effectively exposes reasoning challenges in current UMMs, while DAR consistently improves generation quality across various open-source models.
+
 ## Repository Structure
 
 - `Evaluation/`: evaluation pipeline (prompt building, judging, aggregation)
