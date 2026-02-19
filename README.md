@@ -1,5 +1,7 @@
 # MICON-Bench
 
+[![HF Dataset](https://img.shields.io/badge/🤗%20HF%20Dataset-MICON--Bench-yellow)](https://huggingface.co/datasets/Hangliuuu/MICON-Bench)
+
 MICON-Bench is a multi-image benchmark for evaluating image generation quality with a unified, checkpoint-based judge pipeline.
 
 ![MICON-Bench Overview](image.png)
