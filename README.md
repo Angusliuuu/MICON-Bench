@@ -7,8 +7,8 @@ MICON-Bench is a multi-image benchmark for evaluating image generation quality w
 ![MICON-Bench Overview](image.png)
 
 ## 🔥 News
-
-- 2026-02: Initial open-source release of MICON-Bench and DAR framework.
+- 2026.2.21: 🎉 Congratulations! MICON-Bench has been accepted by CVPR 2026!
+- 2026.2.18: Initial open-source release of MICON-Bench and DAR framework.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Note: Extensive experiments demonstrate that MICON-Bench effectively exposes rea
 ## Repository Structure
 
 - `Evaluation/`: evaluation pipeline (prompt building, judging, aggregation)
-- `DAR/`: auxiliary materials and assets
+- `DAR/`: Dynamic Attention Rebalancing - a training-free, plug-and-play mechanism.
 
 ## Requirements
 
