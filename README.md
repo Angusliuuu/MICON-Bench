@@ -1,4 +1,4 @@
-<h3 align="center">MICON-Bench: Benchmarking and Enhancing Multi-Image Context Image Generation in Unified Multimodal Models</h3>
+<h3 align="center">MICON-Bench<br/>Benchmarking and Enhancing Multi-Image Context Image Generation in Unified Multimodal Models</h3>
 
 [![HF Dataset](https://img.shields.io/badge/🤗%20HF%20Dataset-MICON--Bench-yellow)](https://huggingface.co/datasets/Hangliuuu/MICON-Bench)
 
