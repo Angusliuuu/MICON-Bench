@@ -4,7 +4,11 @@
 
 MICON-Bench is a multi-image benchmark for evaluating image generation quality with a unified, checkpoint-based judge pipeline.
 
-![MICON-Bench Overview](image.png)
+![MICON-Bench Overview](images/MICON-Bench.png)
+
+Dynamic Attention Rebalancing (DAR) is a training-free, plug-and-play mechanism that adaptively adjusts attention during inference. 
+
+![DAR Overview](images/DAR.png)
 
 ## 🔥 News
 - 2026.2.21: 🎉 Congratulations! MICON-Bench has been accepted by CVPR 2026!
