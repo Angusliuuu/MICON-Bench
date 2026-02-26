@@ -1,6 +1,7 @@
 <h2 align="center">MICON-Bench:<br/>Benchmarking and Enhancing Multi-Image Context Image Generation in Unified Multimodal Models</h2>
 
 [![HF Dataset](https://img.shields.io/badge/🤗%20HF%20Dataset-MICON--Bench-yellow)](https://huggingface.co/datasets/Hangliuuu/MICON-Bench)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.19497-b31b1b.svg)](https://arxiv.org/abs/2602.19497)
 
 MICON-Bench is a multi-image benchmark for evaluating image generation quality with a unified, checkpoint-based judge pipeline.
 
